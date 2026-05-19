@@ -1,24 +1,112 @@
 [
-    { "name": "BANANA TEMPURA", "path": "images/BANANA_TEMPURA.jpg" },
-    { "name": "CAMARONES TEMPURA", "path": "images/CAMARONES_TEMPURA.jpg" },
-    { "name": "CAMELADO", "path": "images/CAMELADO.jpg" },
-    { "name": "CAPUCHINO FRIO", "path": "images/CAPUCHINO_FRIO.jpg" },
-    { "name": "CERVEZA SAPPORO", "path": "images/CERVEZA_SAPPORO.jpg" },
-    { "name": "CHAROLADELUX", "path": "images/CHAROLADELUX.jpg" },
-    { "name": "CURRY POLLO EMPANIZADO", "path": "images/CURRY_POLLO_EMPANIZADO.jpg" },
-    { "name": "GREAN TEA FRAPPE", "path": "images/GREAN_TEA_FRAPPE.jpg" },
-    { "name": "JUMA ROLL", "path": "images/JUMA_ROLL.jpg" },
-    { "name": "MANGUITO ROLL", "path": "images/MANGUITO_ROLL.jpg" },
-    { "name": "MEXICANITO ROLL", "path": "images/MEXICANITO_ROLL.jpg" },
-    { "name": "MEXICANO ROLL", "path": "images/MEXICANO_ROLL.jpg" },
-    { "name": "MOKA FRAPPE", "path": "images/MOKA_FRAPPE.jpg" },
-    { "name": "MONTERREY ROLL", "path": "images/MONTERREY_ROLL.jpg" },
-    { "name": "MONTE ALBAN ROLL", "path": "images/MONTE_ALBAN_ROLL.jpg" },
-    { "name": "NIGIRI", "path": "images/NIGIRI.jpg" },
-    { "name": "NIGUIRI", "path": "images/NIGUIRI.jpg" },
-    { "name": "OREO FRAPPE", "path": "images/OREO_FRAPPE.jpg" },
-    { "name": "PAQUETE INDIVIDUAL DORADO ROLL YAKIMESHI MIXTO BEBIDA ELECCION", "path": "images/PAQUETE_INDIVIDUAL_DORADO_ROLL_YAKIMESHI_MIXTO_BEBIDA_ELECCION.jpg" },
-    { "name": "PRIMAVERA ROLL", "path": "images/PRIMAVERA_ROLL.jpg" },
-    { "name": "SHASHIMI", "path": "images/SHASHIMI.jpg" },
-    { "name": "YAKIMESHI", "path": "images/YAKIMESHI.jpg" }
+    {
+        "name": "BANANA TEMPURA",
+        "path": "images/BANANA_TEMPURA.jpg",
+        "category": "food"
+    },
+    {
+        "name": "CAMARONES TEMPURA",
+        "path": "images/CAMARONES_TEMPURA.jpg",
+        "category": "food"
+    },
+    {
+        "name": "CAMELADO",
+        "path": "images/CAMELADO.jpg",
+        "category": "drink"
+    },
+    {
+        "name": "CAPUCHINO FRIO",
+        "path": "images/CAPUCHINO_FRIO.jpg",
+        "category": "drink"
+    },
+    {
+        "name": "CERVEZA SAPPORO",
+        "path": "images/CERVEZA_SAPPORO.jpg",
+        "category": "drink"
+    },
+    {
+        "name": "CHAROLADELUX",
+        "path": "images/CHAROLADELUX.jpg",
+        "category": "food"
+    },
+    {
+        "name": "CURRY POLLO EMPANIZADO",
+        "path": "images/CURRY_POLLO_EMPANIZADO.jpg",
+        "category": "food"
+    },
+    {
+        "name": "GREAN TEA FRAPPE",
+        "path": "images/GREAN_TEA_FRAPPE.jpg",
+        "category": "drink"
+    },
+    {
+        "name": "JUMA ROLL",
+        "path": "images/JUMA_ROLL.jpg",
+        "category": "roll"
+    },
+    {
+        "name": "MANGUITO ROLL",
+        "path": "images/MANGUITO_ROLL.jpg",
+        "category": "roll"
+    },
+    {
+        "name": "MEXICANITO ROLL",
+        "path": "images/MEXICANITO_ROLL.jpg",
+        "category": "roll"
+    },
+    {
+        "name": "MEXICANO ROLL",
+        "path": "images/MEXICANO_ROLL.jpg",
+        "category": "roll"
+    },
+    {
+        "name": "MOKA FRAPPE",
+        "path": "images/MOKA_FRAPPE.jpg",
+        "category": "drink"
+    },
+    {
+        "name": "MONTERREY ROLL",
+        "path": "images/MONTERREY_ROLL.jpg",
+        "category": "roll"
+    },
+    {
+        "name": "MONTE ALBAN ROLL",
+        "path": "images/MONTE_ALBAN_ROLL.jpg",
+        "category": "roll"
+    },
+    {
+        "name": "NIGUIRI",
+        "path": "images/NIGIRI.jpg",
+        "category": "food"
+    },
+    {
+        "name": "NIGUIRI",
+        "path": "images/NIGUIRI.jpg",
+        "category": "food"
+    },
+    {
+        "name": "OREO FRAPPE",
+        "path": "images/OREO_FRAPPE.jpg",
+        "category": "drink"
+    },
+    {
+        "name": "PAQUETE INDIVIDUAL DORADO ROLL YAKIMESHI MIXTO BEBIDA ELECCION",
+        "path": "images/PAQUETE_INDIVIDUAL_DORADO_ROLL_YAKIMESHI_MIXTO_BEBIDA_ELECCION.jpg",
+        "category": "food"
+    },
+    {
+        "name": "PRIMAVERA ROLL",
+        "path": "images/PRIMAVERA_ROLL.jpg",
+        "category": "roll"
+    },
+    {
+        "name": "SHASHIMI",
+        "path": "images/SHASHIMI.jpg",
+        "category": "food"
+    },
+    {
+        "name": "YAKIMESHI",
+        "path": "images/YAKIMESHI.jpg",
+        "category": "food"
+    }
 ]

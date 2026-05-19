@@ -254,6 +254,38 @@ body {
     width: 100%;
 }
 
+/* --- Filtros --- */
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    background-color: transparent;
+    border: 2px solid var(--red-dark);
+    color: var(--red-dark);
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+    background-color: var(--red);
+    border-color: var(--red);
+    color: white;
+}
+
+.filter-btn.active {
+    background-color: var(--red-dark);
+    color: white;
+}
+
 /* --- Responsividad (Mobile First o Adaptación) --- */
 @media (max-width: 900px) {
     .grid-container {
@@ -264,7 +296,8 @@ body {
 
     .card-vertical-long,
     .card-vertical,
-    .card-double-height {
+    .card-double-height,
+    .card-small {
         grid-row: span 1;
         /* Eliminamos el span complejo en pantallas chicas para que no se rompa */
         height: 300px;
