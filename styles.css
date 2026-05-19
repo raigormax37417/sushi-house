@@ -1,0 +1,279 @@
+/* --- Variables y Reset --- */
+:root {
+    --bg-main: #f3eee7;
+    --orange: #ff6b35;
+    --orange-dark: #e85d04;
+    --red: #dc2f02;
+    --red-dark: #9d0208;
+    --white: #ffffff;
+    --text-dark: #333;
+}
+
+@font-face {
+    font-family: 'Fredoka';
+    src: url('fonts/Fredoka-VariableFont_wdth.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fredoka';
+    src: url('fonts/static/Fredoka-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fredoka';
+    src: url('fonts/static/Fredoka-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fredoka';
+    src: url('fonts/static/Fredoka-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fredoka';
+    src: url('fonts/static/Fredoka-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fredoka';
+    src: url('fonts/static/Fredoka-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fredoka';
+    src: url('fonts/static/Fredoka-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fredoka';
+    src: url('fonts/static/Fredoka-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fredoka';
+    src: url('fonts/static/Fredoka-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fredoka', sans-serif;
+    /* Cambiar por una fuente estilo "Chunky/Asian" si deseas */
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-dark);
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* --- Headers y Footers --- */
+.menu-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.menu-header h1 {
+    font-size: 4rem;
+    color: var(--red);
+    letter-spacing: 2px;
+}
+
+.menu-footer {
+    margin-top: 30px;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    color: var(--red);
+}
+
+/* --- GRID PRINCIPAL --- */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 220px;
+    /* Altura base para las filas */
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* --- Comportamiento de las Tarjetas (Grid Spans) --- */
+.card {
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Posicionamiento exacto basado en la imagen */
+.card-vertical-long {
+    grid-row: span 3;
+    /* Ocupa 3 filas de alto */
+}
+
+.card-vertical {
+    grid-row: span 2;
+}
+
+.card-double-height {
+    grid-row: span 3;
+}
+
+.card-small {
+    grid-row: span 1;
+}
+
+/* --- Estilos Temáticos y Colores --- */
+.bg-orange {
+    background-color: var(--orange);
+    color: white;
+}
+
+.bg-orange-dark {
+    background-color: var(--orange-dark);
+    color: white;
+}
+
+.bg-red {
+    background-color: var(--red);
+    color: white;
+}
+
+.bg-red-dark {
+    background-color: var(--red-dark);
+    color: white;
+}
+
+.bg-white {
+    background-color: var(--white);
+}
+
+.bg-beige {
+    background-color: #f7d6c8;
+}
+
+.flex-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+}
+
+/* --- Detalles Específicos de las Tarjetas --- */
+
+/* Tarjeta Sushi (Efecto de texto repetido de fondo) */
+.text-pattern {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.sushi-text {
+    font-size: 3rem;
+    line-height: 0.95;
+    opacity: 0.3;
+    text-align: center;
+    white-space: pre-line;
+}
+
+.floating-img {
+    position: absolute;
+    width: 85%;
+    top: 30%;
+    z-index: 2;
+}
+
+/* Tarjeta Ramen Centro (Rayos de sol de fondo) */
+.sunburst-rays {
+    background: radial-gradient(circle, #fff 30%, var(--orange) 100%);
+    /* Simplificación de los rayos */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.ramen-bowl {
+    width: 90%;
+    position: absolute;
+    top: 15%;
+}
+
+/* Tarjeta Cravings (Gradiente sutil y textos separados) */
+.bg-red-gradient {
+    background: linear-gradient(135deg, var(--red), var(--red-dark));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    color: white;
+}
+
+.main-bowl {
+    width: 100%;
+    align-self: center;
+}
+
+.text-split {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    width: 100%;
+}
+
+/* --- Responsividad (Mobile First o Adaptación) --- */
+@media (max-width: 900px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        /* Pasamos a 2 columnas en tablets */
+        grid-auto-rows: auto;
+    }
+
+    .card-vertical-long,
+    .card-vertical,
+    .card-double-height {
+        grid-row: span 1;
+        /* Eliminamos el span complejo en pantallas chicas para que no se rompa */
+        height: 300px;
+    }
+}
+
+@media (max-width: 550px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        /* 1 sola columna en celulares */
+    }
+}
